@@ -1,0 +1,126 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f9c5d1, #fbc2eb, #a6c1ee);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 90%;
+  max-width: 550px;
+  text-align: center;
+  animation: pop 0.6s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #f9a8d4;
+  border-radius: 10px;
+  outline: none;
+}
+
+button {
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #a18cd1, #fbc2eb);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ff66b2;
+}
+
+#quiz-form {
+  text-align: left;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.question {
+  background: #fff0f5;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border: 1px solid #ffd1dc;
+  box-shadow: 0 2px 6px rgba(255, 182, 193, 0.2);
+}
+
+.question h3 {
+  color: #ff4081;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  background: #ffffffb0;
+  border-radius: 8px;
+  margin: 6px 0;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid #ffe0ec;
+}
+
+label:hover {
+  background: #ffe6f0;
+  transform: translateX(5px);
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #ff66b2;
+  transform: scale(1.2);
+}
+
+#login-error {
+  color: #ff004c;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Scrollbar style (cute pastel one) */
+#quiz-form::-webkit-scrollbar {
+  width: 8px;
+}
+
+#quiz-form::-webkit-scrollbar-thumb {
+  background: #f9a8d4;
+  border-radius: 10px;
+}
+
+#quiz-form::-webkit-scrollbar-track {
+  background: #ffe4f1;
+}
