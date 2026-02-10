@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- login code -->
+    <div id="login-container" class="card">
+      <h1> 🌟 SMIT Student Login 🌟</h1>
+      <input type="text" id="username" placeholder="userName">
+      <input type="password" id="password" placeholder="password">
+      <button id="login-btn">Sign In</button>
+     
+    </div>
+
+      <!-- Quiz code -->
+    <div id="quiz-container" class="card hidden">
+        <h1>🌸CSS Basic Quiz🌸</h1>
+        <form id="quiz-form"></form>
+        <button id="submit-btn" class="hiddden">Submit Quiz</button>
+    </div>
+
+       <!-- Result code -->
+    <div id="result-container" class="card hidden">
+        <h1>🎉Quiz Result🎉</h1>
+        <p id="score"></p>
+        <p id="correct"></p>
+        <p id="wrong"></p>
+        <button onclick="location.reload()">Restart</button>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
